@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: #ff6600;
+    font-size: 2em;
+}
+
+.content {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    border: 2px solid #ff6600;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+form.delete {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+table th {
+    width: 50%;
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+button[type="submit"] {
+    padding: 12px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e05500;
+}
+
+div[style*="color: red"] {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* style.css に追加または新しく作成 */
+
+.content a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #ff6600;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.content a:hover {
+    background-color: #e05500;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    font-size: 1em;
+    background-color: #ff6600;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e05500;
+}
+
+.movie-detail-container {
+    display: flex;
+    max-width: 900px;
+    margin: 20px auto;
+    gap: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #ff6600;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.poster img {
+    max-width: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.movie-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.movie-info h1 {
+    color: #ff6600;
+    margin-top: 0;
+}
+
+.movie-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.movie-info button {
+    padding: 10px 18px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.bottom-right {
+    align-self: flex-end;
+    margin-top: auto;
+    text-align: right;
+}
+
+.movie-info button:disabled {
+    background-color: #aaa;
+    cursor: default;
+}
+
+.movie-info button:hover:not(:disabled) {
+    background-color: #e05500;
+}
+
+.movie-info a {
+    color: #000;
+    text-decoration: none;
+}
+
+.movie-info a:hover {
+    text-decoration: underline;
+}
+
+#link {
+    color: blue;
+}
+
+/*ライブラリ用*/
+.movie-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.movie-card:hover {
+    transform: scale(1.03);
+}
+
+.poster-link {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.library-poster {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+    height: 300px;
+    object-fit: cover;
+}
+
+.library-poster:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.hover-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px; /* 高さ固定 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 1em;
+    white-space: nowrap; /* 必須：テキストが1行に */
+    overflow: hidden;   /* 必須：溢れた部分を隠す */
+    text-overflow: ellipsis; /* 必須：省略記号 */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    pointer-events: none;
+    max-width: 100%; /* 横幅を最大化 */
+}
+
+.poster-link:hover .hover-title {
+    opacity: 1;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 24px;
+    margin: 40px auto;
+    padding: 0 10px;
+    transition: max-width 0.3s ease;
+}
+
+.movie-grid.fixed-width {
+    width: fit-content; /* 中身に合わせる幅にする */
+    max-width: 1000px;   /* 幅の上限 */
+	min-width: 200px;
+}
+
+.movie-grid.auto-width {
+    max-width: 100%;
+}
+
+/*ジャンルのドロップダウン用*/
+#genreSelect {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: 2px solid #FF6600; /* オレンジ枠 */
+    border-radius: 8px;
+    background-color: #fff; /* 背景白 */
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    text-align: center;
+}
+
+/* ホバー時 */
+#genreSelect:hover {
+    background-color: #fef3eb;
+    border-color: #e65c00;
+}
+
+/* フォーカス時 */
+#genreSelect:focus {
+    outline: none;
+    border-color: #cc5200;
+    box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.3);
+}

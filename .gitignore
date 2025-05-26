@@ -1,0 +1,39 @@
+# ========== Eclipse project files ==========
+.classpath
+.project
+.settings/
+
+# ========== Build output directories ==========
+/bin/
+/build/
+/target/
+
+# ========== OS-specific files ==========
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+Desktop.ini
+
+# ========== Logs ==========
+*.log
+
+# ========== IDE-specific files ==========
+*.iml
+.idea/
+*.swp
+*.swo
+
+# ========== Temporary files ==========
+*.tmp
+*.bak
+*.backup
+
+# ========== Application config (secret) ==========
+src/main/resources/config.properties
+
+
+# ========== Jetty / Tomcat output ==========
+logs/
+temp/
+work/

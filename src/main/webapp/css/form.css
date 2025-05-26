@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* ログインフォーム全体のスタイル */
+.form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	/* ビューポートの高さに合わせる */
+	position: relative;
+}
+
+/* 縦並び＆中央揃えにするためのラッパー */
+.form-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* ログインフォームと編集フォーム共通のスタイル */
+.login-form,
+.edit-form,
+.register-form {
+	background-color: rgba(0, 0, 0, 0.7);
+	/* 半透明の黒背景 */
+	padding: 30px;
+	border-radius: 10px;
+	width: 300px;
+	/* フォームの幅 */
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+	color: white;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+label {
+	color: white;
+	font-size: 1rem;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	font-size: 1rem;
+	border-radius: 5px;
+	border: none;
+	margin-top: 5px;
+	background-color: #f0f0f0;
+	color: black;
+	box-sizing: border-box;
+}
+
+input:focus {
+	outline: none;
+	border: 2px solid #ff6600;
+	/* オレンジ色で強調 */
+}
+
+button {
+	background-color: #ff6600;
+	/* オレンジ色 */
+	color: white;
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	/* アニメーション効果 */
+}
+
+button:hover {
+	background-color: #e55d00;
+	/* ホバー時の少し暗いオレンジ色 */
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+	/* 影を強調 */
+}
+
+.form-link {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.form-link a {
+	color: #ff6600;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	font-weight: bold;
+}
+
+.form-link a:hover {
+	color: #e55d00;
+}
+
+#confirmation{
+	color: black;
+}
+
+/* 確認画面のラベル表示を見やすく整える */
+.form-group p {
+  font-size: 1rem;
+  color: white;
+  margin: 10px 0;
+}
+
+.form-group span {
+  font-weight: bold;
+  margin-left: 10px;
+  color: #ffa500; /* オレンジで強調 */
+}
